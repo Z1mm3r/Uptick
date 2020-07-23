@@ -36,7 +36,7 @@ export default function Header(props){
         <div className={classes.root}>
             <AppBar className={classes.appBar} position="static">
                 <Toolbar>
-                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" size="large">
+                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" size="medium">
                     <MenuIcon fontSize="large" />
                 </IconButton>
                 <Typography variant="h6" className={classes.title}>
