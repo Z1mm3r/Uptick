@@ -4,6 +4,7 @@ import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
+import BiggestMovers from './BiggestMovers'
 
 
 
@@ -19,7 +20,7 @@ function StreetViewScreen(props){
             <Grid item>
                 <Grid container direction="column">
                     <Grid item>
-                        Top Movers
+                        <BiggestMovers/>
                     </Grid>
                     <Divider/>
                     <Grid item>
