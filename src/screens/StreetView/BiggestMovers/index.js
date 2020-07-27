@@ -5,17 +5,17 @@ import Grid from '@material-ui/core/Grid';
 import TickerCard from '../../../components/TickerCard'
 
 const testValues = [
-    {symbol: 'AAPl', price: '$16.75', change: '2.3%' },
-    {symbol: 'HD', price: '$4.55', change: '-1.3%' },
-    {symbol: 'AMZN', price: '$3095.30', change: '1.64%' },
-    {symbol: 'TOLL', price: '$70.40', change: '1.1%' },
+    {symbol: 'AAPl', price: '$16.75', change: '2.3' },
+    {symbol: 'HD', price: '$4.55', change: '-1.3' },
+    {symbol: 'AMZN', price: '$3095.30', change: '1.64' },
+    {symbol: 'TOLL', price: '$70.40', change: '1.1' },
 ]
 
 function BiggestMovers(props){
 
     const renderTickerCard = (values) =>{
         return(
-            <Grid item sm={3}>
+            <Grid key = {values.symbol} item sm={3}>
                 <TickerCard symbol={values ? values.symbol : null} 
                 price={values? values.price : null} 
                 change ={values ? values.change : null} >
