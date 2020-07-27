@@ -10,11 +10,20 @@ import cx from 'classnames'
 //import { borders } from '@material-ui/system';
 
 const useStyles = makeStyles(theme => ({
+    borderThin:{
+        borderWidth: 'thin',
+    },
+    borderMedium:{
+        borderWidth: 'medium',
+    },
+    borderThick:{
+        borderWidth: 'thick'
+    },
     borderColorBlack: {
       borderColor: 'Black',
     },
     borderColorGreen:{
-        borderColor: 'Green',
+        borderColor: '#71FF25',
     },
     borderColorRed:{
         borderColor:'Red',
@@ -36,7 +45,7 @@ function TickerCard(props){
         <Card className ={cx(
             (change == null || change == undefined || change == 0 ?  classes.borderColorBlack 
             : change > 0  ? classes.borderColorGreen : classes.borderColorRed),
-            
+            borderThickness == 'thin' ? classes.borderThin : borderThickness == 'medium' ? classes.borderMedium : classes.borderThick,
             )}
             variant='outlined'>
             <Typography>

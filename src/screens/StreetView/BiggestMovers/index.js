@@ -18,7 +18,8 @@ function BiggestMovers(props){
             <Grid key = {values.symbol} item sm={3}>
                 <TickerCard symbol={values ? values.symbol : null} 
                 price={values? values.price : null} 
-                change ={values ? values.change : null} >
+                change ={values ? values.change : null} 
+                borderThickness = 'medium'>
 
                 </TickerCard>
             </Grid>
@@ -37,7 +38,7 @@ function BiggestMovers(props){
                 <h3>Biggest Daily Movers</h3>
             </Grid>
             <Grid item>
-                <Grid container direction='row'>
+                <Grid container direction='row' spacing={2}>
                     {renderTickerCards(testValues)}
                 </Grid>
             </Grid>
