@@ -11,13 +11,11 @@ import BiggestMovers from './BiggestMovers'
 function StreetViewScreen(props){
     return(
         <Grid container direction="row">
-            <Grid item>
+            <Grid item md={3}>
                 watchList
             </Grid>
 
-            <Divider orientation="vertical"/>
-
-            <Grid item>
+            <Grid item md={9}>
                 <Grid container direction="column">
                     <Grid item>
                         <BiggestMovers/>
