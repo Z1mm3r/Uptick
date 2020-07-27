@@ -2,12 +2,11 @@ import React from 'react'
 
 import Card from '@material-ui/core/Card'
 import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 
 import cx from 'classnames'
-
-//import { borders } from '@material-ui/system';
 
 const useStyles = makeStyles(theme => ({
     borderThin:{
@@ -48,14 +47,20 @@ function TickerCard(props){
             borderThickness == 'thin' ? classes.borderThin : borderThickness == 'medium' ? classes.borderMedium : classes.borderThick,
             )}
             variant='outlined'>
-            <Typography>
-                {symbol ? symbol : 'No Symbol' }
+            <Typography >
+                <Box fontWeight="fontWeightBold" fontSize={20}>
+                    {symbol ? symbol : 'No Symbol' }
+                </Box>
             </Typography>
             <Typography>
-                {price  ? price : 'Error no price'}
+                <Box fontWeight="fontWeightBold" fontSize={16}>
+                    {price  ? price : 'Error no price'}
+                </Box>
             </Typography>
             <Typography>
-                {change ? change : 'Error no % change given'}
+                <Box fontWeight="fontWeightBold" fontSize={16}>
+                    {change ? `${change}%   ` : 'Error no % change given'}
+                </Box>
             </Typography>
         </Card>
     )

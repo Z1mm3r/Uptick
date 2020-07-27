@@ -20,7 +20,9 @@ function StreetViewScreen(props){
                     <Grid item>
                         <BiggestMovers/>
                     </Grid>
+                    <br/>
                     <Divider/>
+                    <br/>
                     <Grid item>
                         News
                     </Grid>

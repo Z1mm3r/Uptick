@@ -1,8 +1,10 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
 
 
 import TickerCard from '../../../components/TickerCard'
+import { Typography } from '@material-ui/core';
 
 const testValues = [
     {symbol: 'AAPl', price: '$16.75', change: '2.3' },
@@ -35,7 +37,11 @@ function BiggestMovers(props){
     return(
         <Grid container direction='column'>
             <Grid item>
-                <h3>Biggest Daily Movers</h3>
+                <Typography>
+                    <Box fontWeight="fontWeightBold" fontSize={30}>
+                        Biggest Daily Movers
+                    </Box>
+                </Typography>
             </Grid>
             <Grid item>
                 <Grid container direction='row' spacing={2}>
