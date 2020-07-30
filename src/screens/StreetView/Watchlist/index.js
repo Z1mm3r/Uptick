@@ -34,16 +34,18 @@ function Watchlist(props){
     }
 
     return(
-        <Grid container direction='column'>
-            <Grid item>
-                <Typography>
-                    <Box fontWeight="fontWeightBold" fontSize={16}>
-                        Watchlist
-                    </Box>
-                </Typography>
+        <Box>
+            <Grid container direction='column'>
+                <Grid item>
+                    <Typography>
+                        <Box fontWeight="fontWeightBold" fontSize={16}>
+                            Watchlist
+                        </Box>
+                    </Typography>
+                </Grid>
+                {renderTickerCards(testValues)}
             </Grid>
-            {renderTickerCards(testValues)}
-        </Grid>
+        </Box>
     )
 }
 
