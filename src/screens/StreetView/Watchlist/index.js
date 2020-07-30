@@ -37,7 +37,7 @@ function Watchlist(props){
         <Grid container direction='column'>
             <Grid item>
                 <Typography>
-                    <Box fontWeight="fontWeightBold" fontSize={30}>
+                    <Box fontWeight="fontWeightBold" fontSize={16}>
                         Watchlist
                     </Box>
                 </Typography>
