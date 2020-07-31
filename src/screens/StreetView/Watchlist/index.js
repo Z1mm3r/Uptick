@@ -34,8 +34,8 @@ function Watchlist(props){
     }
 
     return(
-        <Box>
-            <Grid container direction='column'>
+        <Box p={2} borderRight={3} style={{height: "85vh" }}>
+            <Grid container spacing={2} direction='column'>
                 <Grid item>
                     <Typography>
                         <Box fontWeight="fontWeightBold" fontSize={16}>

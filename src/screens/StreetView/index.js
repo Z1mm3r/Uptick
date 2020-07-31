@@ -11,12 +11,12 @@ import Watchlist from './Watchlist'
 
 function StreetViewScreen(props){
     return(
-        <Grid container direction="row">
-            <Grid item md={1}>
+        <Grid container direction="row" spacing={3} style={{height: "90vh" }}>
+            <Grid item md={2} >
                 <Watchlist/>
             </Grid>
 
-            <Grid item md={11}>
+            <Grid item md={10}>
                 <Grid container direction="column">
                     <Grid item>
                         <BiggestMovers/>
