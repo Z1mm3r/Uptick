@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import BiggestMovers from './BiggestMovers'
 import Watchlist from './Watchlist'
+import News from './News'
 
 
 
@@ -25,7 +26,7 @@ function StreetViewScreen(props){
                     <Divider/>
                     <br/>
                     <Grid item>
-                        News
+                        <News/>
                     </Grid>
                 </Grid>
             </Grid>
