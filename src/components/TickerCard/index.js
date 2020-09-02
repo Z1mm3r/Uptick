@@ -54,12 +54,12 @@ function TickerCard(props){
             </Typography>
             <Typography>
                 <Box fontWeight="fontWeightBold" fontSize={16}>
-                    {price  ? price : 'Error no price'}
+                    {price  ? price  : 'Error no price'}
                 </Box>
             </Typography>
             <Typography>
                 <Box fontWeight="fontWeightBold" fontSize={16}>
-                    {change ? `${change}%   ` : 'Error no % change given'}
+                    {change ? change >= 0 ? `↑ ${change}%`:`↓ ${change}%` : 'Error no % change given'}
                 </Box>
             </Typography>
         </Card>

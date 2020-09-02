@@ -17,9 +17,8 @@ export default function NewsTab(props){
     return(
         <TabPanel value={value.toString()} label={label}>
             <Box>
-                
+                {label}
             </Box>
-            {label}
         </TabPanel>
     )
 }
